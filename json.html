@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <h1> Json</h1>
+    <h3>Javscript object notation</h3>
+
+
+
+    <script>
+       // to convert a js object into json we have to JSON.stringify()
+
+        const user ={id : 2563454,  
+                     name :'nahid lasker',
+                     friendsAge :[23, 13, 12],
+                     lover :{
+                         name :'jamila',
+                         age : 23
+                     }
+                    };
+         //js object          
+         //{"id":2563454,"name":"nahid lasker"} //json object
+        const userJson = JSON.stringify(user);   
+        console.log(userJson);
+
+         // to convert a json into js object we have to JSON.parse()
+         const userFromJson =JSON.parse(userJson);
+         console.log(userFromJson);
+
+
+    
+    </script>
+</body>
+</html>
